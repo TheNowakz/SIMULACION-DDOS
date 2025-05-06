@@ -6,4 +6,5 @@ No me hago responsable del uso que puede ser dado , este proyecto de simulacion 
 
 #REDES
 Telegram: @Deadbabo - Deadman
+
 Canal Telegram: t.me/DdmTchanel
