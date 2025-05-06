@@ -1,0 +1,44 @@
+#BY DEADMAN 
+#CHANNEL --> t.me/DdmTchanel
+#TELEGRAM ---> @Deadbabo - Deadman
+
+import requests
+import time
+import random
+
+
+url = "htpp://example.com" # reemplaza con la URL de tu pagina 
+num_request  = 100 # numero de solicitudes a enviar 
+delay  = 0.5 
+
+def send_post_request(url):
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = request.get(url, headers=headers)
+        print(f"Solicitud GET enviada, Codigo de estado:  {response.status_code}")
+    except request.exceptions.RequestException as e:
+        print("Error al enviar solicitud POST: {e}")
+
+def send_post_request(url):
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        data = {'key': 'value'}
+        response = request.get(url, headers=headers, data=data)
+        print(f"Solicitud GET enviada, Codigo de estado:  {response.status_code}")
+    except request.exceptions.RequestException as e:
+        print("Error al enviar solicitud POST: {e}")
+
+for i in range(num_request):
+    send_get_request(url)
+    time.sleep(delay)
+    print(f"Solicitud {1+1} de {num_request} enviado, ")
+
+try: 
+    response = request.get(url)
+    if response.status_code == 200:
+        print("La pagina devuelve parece estar funcionando correctamente. ")
+    else:
+        print("La pagina devuelve un codigo de estado {responde.status_code}. Puede ser vulnerable a una ataque Ddos.")
+except requests.exceptions.RequestExceptions as e:
+    print("Error al verificar la pagina: {e}")
+    
